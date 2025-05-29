@@ -1,0 +1,9 @@
+We calculated the probability of drawing 4 yellow marbles in 4 consecutive picks (with replacement) from a bag containing 10 marbles (6 yellow, 2 red, 2 pink). Since each draw is independent, we used the simple probability formula:
+Probability = P(Yellow) × P(Yellow) × P(Yellow) × P(Yellow) = (0.6)^4
+Steps shown in the sheet:
+1.	Given probabilities:
+o	P(Yellow) = 6/10 = 0.6
+o	P(Red) = 0.2, P(Pink) = 0.2 (not used here).
+2.	Calculation:
+o	Formula: =C2^4 → (0.6)^4 = 0.1296 (12.96%).
+This result means there’s a 12.96% chance of picking 4 yellow marbles in a row when each marble is replaced after drawing.
