@@ -1,0 +1,50 @@
+https://i.postimg.cc/zvWrwHT6/normal-distribution.jpg
+
+Scatter with only markers
+
+=NORM.S.INV((RANK(A2, $A$2:$A$16, 1) -0.5)/COUNT(A:A))
+
+Data
+4
+5.6
+7.8
+7.9
+9
+9.3
+10.4
+12
+13.4
+14.4
+15.6
+18.7
+20.1
+20.5
+20.9
+
+The formula =NORM.S.INV((RANK(A2, $A$2:$A$16, 1) - 0.5)/COUNT(A:A)) is being used to generate z-values for a normal probability plot (Q-Q plot) in Excel. Here's how it works:
+
+RANK(A2, $A$2:$A$16, 1) calculates the rank of the data value in cell A2 among the range $A$2:$A$16 in ascending order.
+
+Subtracting 0.5 adjusts the rank to represent the midpoint of the rank interval, which improves the approximation for small datasets.
+
+COUNT(A:A) gives the total number of data points, which normalizes the rank to a percentile.
+
+The entire expression (RANK(...) - 0.5)/COUNT(...) converts the rank into a cumulative probability.
+
+Finally, NORM.S.INV(...) computes the z-score (standard normal quantile) corresponding to that cumulative probability.
+
+This results in a z-value that can be plotted against the original data points. The scatter plot created in the image compares the data against a standard normal distribution. If the data is normally distributed, the points will lie approximately on a straight line, which helps visually assess normality.
+
+In general, the formula
+
+=NORM.S.INV((RANK(x, data_range, 1) - 0.5) / COUNT(data_range))
+is used to convert a sorted data point x into its corresponding z-score (standard normal quantile) for a normal probability plot.
+
+Purpose:
+It helps you check if a dataset is normally distributed by plotting:
+
+x-values (original data) vs.
+
+y-values (theoretical z-scores under a normal distribution)
+
+If the points form a straight line, the data likely follows a normal distribution.
