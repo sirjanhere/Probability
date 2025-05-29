@@ -1,0 +1,16 @@
+The table calculates the cumulative probability for a normally distributed variable with mean (μ) = 60 and standard deviation (σ) = 10. It shows P(X ≤ 70) = 0.841345.
+
+Calculation:
+
+Z-score formula: Z = (X - μ)/σ
+
+For X = 70: Z = (70 - 60)/10 = 1.0
+
+This Z-score means 70 is 1 standard deviation above the mean
+
+P(Z ≤ 1.0) = 0.841345 (84.13%)
+
+Excel formula used:
+=NORM.DIST(70,60,10,TRUE)
+
+The 84.13% probability matches the normal distribution property where ~68% of data falls within μ±σ, and ~84% falls below μ+σ.
