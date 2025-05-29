@@ -1,0 +1,65 @@
+
+
+https://i.postimg.cc/mkdQwhR3/image.png
+
+https://i.postimg.cc/WpS6jYrD/image.png
+
+Table 1: Generating Random Numbers from Discrete Distributions
+Column A: Bernoulli Distribution (Single Trial)
+Formula:
+=IF(RAND() < 0.5, 1, 0)
+Purpose:
+Simulates a Bernoulli trial with success probability p = 0.5.
+Returns 1 (success) if the random number is less than 0.5, else 0 (failure).
+Example Output:
+1 (success) or 0 (failure) in each row.
+
+Columns B-D: Binomial Distribution (Multiple Trials)
+Formula:
+=BINOM.INV(n, p, RAND())
+Purpose:
+Generates random numbers from a Binomial distribution, which counts successes in n trials with success probability p.
+n = number of trials (Column B), p = success probability (Column C).
+Example Output:
+
+For n=10, p=0.2, output 0 means 0 successes in 10 trials.
+
+For n=100, p=0.5, output 51 means 51 successes in 100 trials.
+
+Table 2: Poisson Distribution Probabilities
+Columns A-B: Random Inputs
+Formulas:
+
+=RANDBETWEEN(0,10) (Column A): Random number of events (k).
+
+=RANDBETWEEN(1,10) (Column B): Random rate parameter (λ, lambda).
+Purpose:
+Generates random values for k (observed events) and λ (average rate).
+
+Column C: Poisson Probability
+Formula:
+=POISSON.DIST(A3, B3, FALSE)
+Purpose:
+
+Calculates the Poisson probability of observing exactly k events (Column A) given rate λ (Column B).
+
+FALSE computes the probability mass function (PMF), not cumulative.
+Example Output:
+
+For k=5, λ=9, probability 0.0607 (6.07%).
+
+For k=10, λ=2, probability 3.8E-05 (very rare).
+
+Key Takeaways:
+Bernoulli/Binomial: Model binary outcomes (success/failure) for single/multiple trials.
+
+Poisson: Models rare events over time/space (e.g., arrivals, defects).
+
+Excel Functions:
+
+RAND()/RANDBETWEEN() generate randomness.
+
+BINOM.INV() inverts Binomial CDF for random sampling.
+
+POISSON.DIST() computes exact/cumulative probabilities.
+
