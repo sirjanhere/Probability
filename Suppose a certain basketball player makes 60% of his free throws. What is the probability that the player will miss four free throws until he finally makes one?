@@ -1,0 +1,9 @@
+We calculated the probability of observing 4 failures (k = 4) before achieving the first success in a series of independent trials, where each trial has a success probability of p = 0.6. The geometric distribution formula was applied:
+Probability = (1 - p)^k × p
+Steps shown in the sheet:
+1.	Inputs:
+o	Probability of success per trial (p) = 0.6 (cell B1)
+o	Number of failures before first success (k) = 4 (cell B2)
+2.	Calculation:
+o	Formula: =(1-B1)^B2*B1 → (1 - 0.6)^4 × 0.6 = 0.01536 (1.536%)
+This result indicates there's a 1.536% chance of having exactly 4 failures before the first success when each trial has a 60% success probability.
