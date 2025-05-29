@@ -1,0 +1,5 @@
+https://i.postimg.cc/YSgzHpfk/image.png
+
+This screenshot demonstrates a perfect negative linear correlation (r = -1) between two variables, X (Column A) and Y (Column B), where each increase in X corresponds to a proportional decrease in Y. The data points (1,9), (2,8), ..., (6,4) form a straight line with a slope of -1, confirmed by the CORREL function calculating the Pearson correlation coefficient as -1. This indicates an inverse relationship where the variables move in perfect opposition, a textbook example of negative linear dependence in bivariate analysis.
+
+=CORREL(A2:A7, B2:B7)
