@@ -1,0 +1,4 @@
+The analysis involves calculating the probability distribution for the number of heads (successes) obtained when flipping a fair coin 8 times (trials). The probability of getting exactly k heads in n flips is given by the binomial probability formula:
+P(X = k) = (n choose k) * p^k * (1-p)^(n-k)
+Here, n = 8 (total flips), p = 0.5 (probability of heads on a single flip), and k ranges from 0 to 8. The table lists the probabilities for each possible outcome, while the accompanying chart visually represents this distribution, showing the probability peaking at 4 heads (0.2734) and symmetrically decreasing toward 0 or 8 heads. The results confirm the expected symmetric and bell-shaped distribution for a fair coin.
+The probability of getting exactly 8 heads in 8 coin flips is 0.0039 (or 0.39%), as shown in the table and the rightmost bar of the graph.
