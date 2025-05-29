@@ -1,0 +1,102 @@
+Exponential Distribution CDF - Suppose we have a call centre where the time between calls follows an exponential distribution with λ = 0.2 (average 5 calls per hour). We want to find the probability that the time between calls is ≤ 10 minutes (0.1667 hours).
+
+Time(x)
+0.1667
+0.5
+1
+2
+5
+
+Lambda = 0.2 constant
+
+EXPON.DIST(x,lambda,TRUE)
+
+Column 1: Time (x)
+•	What it represents: The time (in hours) at which we want to evaluate the CDF.
+•	Examples:
+o	0.1667 hours = 10 minutes (since 0.1667 × 60 ≈ 10 minutes).
+o	0.5 hours = 30 minutes.
+o	1.0 hour = 60 minutes.
+o	5.0 hours = 300 minutes.
+Column 2: Lambda (λ)
+•	What it represents: The rate parameter of the exponential distribution (calls per hour).
+o	λ = 0.2 means 1 call every 5 hours on average (since 1/λ = 5).
+o	Higher λ = more frequent events (shorter waiting times).
+Column 3: CDF Formula
+•	What it represents: The Excel formula used to calculate the CDF.
+o	=EXPON.DIST(x, λ, TRUE) computes the probability that the next event (e.g., a call) happens within x hours.
+o	TRUE ensures it calculates the CDF, not the PDF.
+Column 4: Result (CDF Value)
+•	What it represents: The probability that the next event occurs by time x (i.e., P(X ≤ x)).
+•	Interpretation of each row:
+1.	x = 0.1667 hours (10 minutes)
+	CDF = 0.0328 (3.28%)
+	Interpretation: There’s a 3.28% chance the next call happens within 10 minutes.
+	Why so low? Since calls are rare (λ = 0.2), short wait times are unlikely.
+2.	x = 0.5 hours (30 minutes)
+	CDF = 0.0952 (9.52%)
+	Interpretation: 9.52% chance the next call happens within 30 minutes.
+3.	x = 1.0 hour (60 minutes)
+	CDF = 0.1813 (18.13%)
+	Interpretation: 18.13% chance the next call happens within 1 hour.
+4.	x = 2.0 hours (120 minutes)
+	CDF = 0.3297 (32.97%)
+	Interpretation: 32.97% chance the next call happens within 2 hours.
+5.	x = 5.0 hours (300 minutes)
+	CDF = 0.6321 (63.21%)
+	Interpretation: 63.21% chance the next call happens within 5 hours.
+	Matches the average waiting time (1/λ = 5 hours).
+
+
+
+Normal Distribution CDF - Suppose test scores follow a normal distribution with μ = 75 and σ = 10. We want the probability that a student scores ≤ a certain value.
+
+Score(x) Mean(miu) Standard Deviation(sigma) CDF Formula Result
+
+Scores - 60 70 75 80 90
+
+Mean 75 Std Deviation 10
+
+CDF Formula - NORM.DIST(score, mean, std dev, TRUE)
+
+Column 1: Score (x)
+•	What it represents: The test score for which we want to calculate the cumulative probability.
+•	Examples:
+o	60: A student's score of 60.
+o	75: The mean score (average performance).
+o	90: A high score, 1.5 standard deviations above the mean.
+Column 2: Mean (µ)
+•	What it represents: The average score of the distribution.
+o	µ = 75 means the central tendency of the test scores is 75.
+o	In a normal distribution, this is where the bell curve peaks.
+Column 3: Standard Deviation (σ)
+•	What it represents: The spread of the scores around the mean.
+o	σ = 10 indicates most scores fall within ±10 points of the mean (e.g., 65–85 covers ~68% of data, per the 68-95-99.7 rule).
+Column 4: CDF Formula
+•	What it represents: The Excel formula to compute the CDF.
+o	=NORM.DIST(x, µ, σ, TRUE) calculates the probability that a randomly selected score is ≤ x.
+o	TRUE ensures the CDF is returned (not the PDF).
+Column 5: Result (CDF Value)
+•	What it represents: The probability that a student scores ≤ x (i.e., P(X ≤ x)).
+•	Interpretation of each row:
+1.	x = 60
+	CDF = 0.0668 (6.68%)
+	Interpretation: Only 6.68% of students scored 60 or below.
+	Why? 60 is 1.5 standard deviations below the mean (z = (60-75)/10 = -1.5), which is in the left tail.
+2.	x = 70
+	CDF = 0.3085 (30.85%)
+	Interpretation: 30.85% of students scored 70 or below.
+	70 is 0.5 standard deviations below the mean (z = -0.5).
+3.	x = 75
+	CDF = 0.5 (50%)
+	Interpretation: 50% of students scored at or below the mean (75).
+	This is always true for the mean in symmetric distributions like the normal curve.
+4.	x = 80
+	CDF = 0.6915 (69.15%)
+	Interpretation: 69.15% of students scored 80 or below.
+	80 is 0.5 standard deviations above the mean (z = 0.5).
+5.	x = 90
+	CDF = 0.9332 (93.32%)
+	Interpretation: 93.32% of students scored 90 or below.
+	90 is 1.5 standard deviations above the mean (z = 1.5), covering most of the distribution.
+
