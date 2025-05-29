@@ -1,0 +1,9 @@
+We calculated the probability of experiencing 3 failures (k = 3) before achieving the first success in a series of independent trials, where each trial has a success probability of p = 0.5. The geometric distribution formula was used:
+Probability = (1 - p)^k × p
+Steps shown in the sheet:
+1.	Inputs:
+o	Probability of success per trial (p) = 0.5 (cell B1).
+o	Number of failures before first success (k) = 3 (cell B2).
+2.	Calculation:
+o	Formula: =(1-B1)^B2*B1 → (1 - 0.5)^3 × 0.5 = 0.0625 (6.25%).
+This result means there’s a 6.25% chance of having exactly 3 failures (e.g., flipping tails 3 times) before the first success (e.g., flipping heads) with a fair coin (p = 0.5).
