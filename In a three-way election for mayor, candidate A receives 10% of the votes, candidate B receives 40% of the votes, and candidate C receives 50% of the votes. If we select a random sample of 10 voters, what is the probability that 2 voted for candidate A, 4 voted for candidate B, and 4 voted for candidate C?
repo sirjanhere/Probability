@@ -1,0 +1,13 @@
+We calculated the probability of a specific voting outcome where 2 voters chose candidate A, 4 chose B, and 4 chose C out of 10 voters. The multinomial probability formula was applied:
+Probability = (n! / (x₁! x₂! x₃!)) × p₁ˣ¹ × p₂ˣ² × p₃ˣ³
+Steps in the sheet:
+1.	Inputs:
+o	Total voters (n = 10), votes for A (x₁ = 2), B (x₂ = 4), C (x₃ = 4).
+o	Probabilities: p₁ = 0.1 (A), p₂ = 0.4 (B), p₃ = 0.5 (C).
+2.	Calculations:
+o	p₁ˣ¹: =B6^B2 → 0.1² = 0.01
+o	p₂ˣ²: =B7^B3 → 0.4⁴ = 0.0256
+o	p₃ˣ³: =B8^B4 → 0.5⁴ = 0.0625
+o	Multinomial coefficient: =MULTINOMIAL(B2,B3,B4) → 10!/(2!4!4!) = 3150
+3.	Final Probability:
+= 3150 × 0.01 × 0.0256 × 0.0625 = 0.0504 (5.04%).
