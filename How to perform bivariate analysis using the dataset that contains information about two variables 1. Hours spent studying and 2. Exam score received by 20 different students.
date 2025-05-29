@@ -1,0 +1,86 @@
+https://i.postimg.cc/ry53JkvB/image.png
+https://i.postimg.cc/0yh0F6Sc/image.png - With covariance
+
+The screenshot presents a bivariate analysis examining the relationship between hours spent studying (independent variable, Column A) and exam scores (dependent variable, Column B). The data shows a clear positive linear trend, where increasing study hours correspond to higher exam scores.
+Key Findings:
+1.	Correlation Coefficient (0.992):
+o	Nearly perfect positive correlation (r ≈ 0.992), indicating study time strongly predicts exam performance.
+2.	Regression Equation (y = 5.294x + 43.85):
+o	For every additional hour studied, exam scores increase by ~5.294 points.
+o	The intercept (*43.85*) suggests the baseline score with zero study hours.
+3.	R² Value (0.983):
+o	98.3% of the variation in exam scores is explained by study hours, demonstrating an excellent model fit.
+4.	Visual Representation:
+o	The "Series1" and "Linear (Series1)" labels imply a scatter plot with a fitted trendline, visually confirming the linear relationship.
+Conclusion:
+This analysis confirms a strong, linear dependence between study time and exam performance, validated by high correlation, precise regression, and near-perfect R². It is a classic example of bivariate analysis using linear regression.
+
+Hours Spent Studying
+1.5
+2
+2.5
+3
+3.5
+4
+4.5
+5
+5.5
+6
+6.5
+7
+7.5
+8
+8.5
+9
+9.5
+10
+10.5
+11
+
+Exam Scores
+48
+52
+56
+59
+63
+66
+68
+72
+75
+78
+80
+83
+85
+88
+90
+92
+94
+95
+97
+98
+
+OLD EXCEL - 
+Insert scatter with straight lines and markers
+Kisi bhi point pe right click krke add trendline - Box me se display equation on chart display r squared value on chart ko select krna
+
+NEW EXCEL - 
++ me click krke trendline me click kr dena
+trendline me right click krke format trendline kr dena
+
+Pearson correlation coefficient - CORREL(A2:A21, B2:B21)
+
+Population covariance - COVARIANCE.P(A2:A21, B2:B21)
+Sample covariance - COVARIANCE.S(A2:A21, B2:B21)
+
+
+In the bivariate analysis shown in the chart (which plots Hours Spent Studying vs. Exam Score), the values of y and R² are derived from the linear regression trendline equation displayed on the graph.
+From the image:
+Equation of the trendline (y):
+y=5.294x+43.85
+This means for every 1 additional hour spent studying, the exam score is predicted to increase by approximately 5.294 points, starting from a base of 43.85.
+R² (Coefficient of Determination): R^2 =0.983
+This indicates that 98.3% of the variance in exam scores can be explained by the number of hours spent studying — which is extremely strong and suggests a very good linear fit.
+These results confirm a strong positive linear relationship between study hours and exam performance.
+
+
+
