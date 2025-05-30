@@ -1,0 +1,15 @@
+https://i.postimg.cc/KztbBgPV/image.png
+
+https://i.postimg.cc/WznPfLfw/image.png
+
+The Poisson distribution describes the probability of obtaining k successes during a given time interval.
+
+If a random variable X follows a Poisson distribution, then the probability that X = k successes can be found by the following formula:
+
+P(X=k) = λk * e– λ / k!
+
+where:
+
+λ: mean number of successes that occur during a specific interval
+k: number of successes
+e: a constant equal to approximately 2.71828
