@@ -1,0 +1,25 @@
+Solution 1: Pre-format cells
+
+Select the cells where you'll enter probabilities
+
+Right-click > "Format Cells"
+
+Choose "Number" category
+
+Set decimal places to 4
+
+Now enter your 0.1667 values
+
+A bus shows up at a bus stop every 20 minutes. If you arrive at the bus stop, what is the probability that the bus will show up in 8 minutes or less?
+
+Solution:
+
+a: 0 minutes
+b: 20 minutes
+x1: 0 minutes
+x2: 8 minutes
+
+https://i.postimg.cc/fbj5dz3C/image.png
+
+The probability that the bus shows up in 8 minutes or less is 0.4.
+
